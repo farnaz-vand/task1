@@ -1,5 +1,5 @@
 import {
-  Instagram, Facebook, Telegram, Twitter, LinkedIn, Web,
+  Instagram, Facebook, Telegram, Twitter, LinkedIn, Web, Add, Edit, Delete,
 } from '@mui/icons-material';
 
 const getIcon = (iconName: string) => {
@@ -16,6 +16,12 @@ const getIcon = (iconName: string) => {
       return <LinkedIn />;
     case 'website':
       return <Web />;
+    case 'add':
+      return <Add />;
+    case 'edit':
+      return <Edit />;
+    case 'delete':
+      return <Delete />;
     default:
       return null;
   }
